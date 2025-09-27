@@ -1,0 +1,7 @@
+# Directorios de Node.js
+node_modules/
+
+# Archivos generados por el empaquetador
+package-lock.json
+
+# Archivos de compilación de TypeScript
