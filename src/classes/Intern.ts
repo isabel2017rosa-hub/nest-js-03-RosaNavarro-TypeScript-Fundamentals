@@ -7,14 +7,12 @@ export default class Intern extends BaseEmployee {
     super(user, id, department);
   }
 
-  // Salario fijo de 1000
   calculateSalary(): number {
-    return 1000;
+    return 1000; // Salario fijo
   }
 
-  // Método especial del intern
   getInternshipDuration(): string {
-    return "3 meses"; // ejemplo
+    return "3 meses";
   }
 
   getDetails(): string {

@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Sistema básico de gestión de empleados para el Taller #2 de TypeScript",
   "main": "dist/main.js",
+  
   "scripts": {
     "dev": "ts-node src/main.ts",
-    "build": "tsc",
-    "start": "node dist/main.js"
-  },
+    "build": "tsc"
+  }
+  ,
   "keywords": [],
   "author": "Rosa Isabel Navarro Turizo",
   "license": "ISC",

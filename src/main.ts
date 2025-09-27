@@ -2,22 +2,32 @@
 import ApiService from "./services/ApiService";
 import EmployeeService from "./services/EmployeeService";
 import BaseEmployee from "./classes/BaseEmployee";
+import Intern from "./classes/Intern"; // Importamos Intern
+import { Department } from "./interfaces/types"; // Importamos el enum Department
 
 async function main(): Promise<void> {
   try {
-    //Crear instancias de los servicios (inyección de dependencias)
+    // Crear instancias de los servicios (inyección de dependencias)
     const apiService = new ApiService();
     const employeeService = new EmployeeService(apiService);
 
-    //Cargar empleados desde la API
+    // Cargar empleados desde la API
     await employeeService.loadEmployeesFromApi();
 
-    //Obtener todos los empleados cargados
+    // ===== Reto 2: Agregar Intern =====
+    const intern = new Intern(
+      { name: "Juan", age: 22, email: "juan@mail.com", gender: "male" },
+      999,
+      Department.IT //Usamos el enum correctamente
+    );
+    employeeService.addEmployee(intern); // Agregamos el Intern
+
+    // Obtener todos los empleados cargados
     const employees: BaseEmployee[] = employeeService.getAllEmployees();
 
     console.log("=== SISTEMA DE EMPLEADOS ===");
 
-    //Mostrar detalles y salarios de cada empleado
+    // Mostrar detalles y salarios de cada empleado
     employees.forEach((employee) => {
       console.log(employee.getDetails());
       console.log("Salario:", employee.calculateSalary());
@@ -27,5 +37,6 @@ async function main(): Promise<void> {
   }
 }
 
-//Ejecutar la función principal
+// Ejecutar la función principal
 main();
+
