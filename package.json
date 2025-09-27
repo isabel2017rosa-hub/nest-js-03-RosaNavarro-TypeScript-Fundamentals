@@ -1,0 +1,19 @@
+{
+  "name": "taller-02-typescript-fundamentals",
+  "version": "1.0.0",
+  "description": "Sistema básico de gestión de empleados para el Taller #2 de TypeScript",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "ts-node src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js"
+  },
+  "keywords": [],
+  "author": "Rosa Isabel Navarro Turizo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
