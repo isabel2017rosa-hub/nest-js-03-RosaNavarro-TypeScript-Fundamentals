@@ -5,8 +5,8 @@ Proyecto de TypeScript que implementa clases de empleados, servicios para obtene
 
 ## Instalación
 1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/TU_USUARIO/taller-02-typescript-Fundamentals.git
+   `bash
+   - git clone [REPOSITORIO_GITHUB](https://github.com/isabel2017rosa-hub/nest-js-03-RosaNavarro-TypeScript-Fundamentals)
    cd taller-02-typescript-Fundamentals
 
 ## Configuración
@@ -27,11 +27,3 @@ Proyecto de TypeScript que implementa clases de empleados, servicios para obtene
 4. Notas
    ** node_modules/ está en .gitignore.
    ** Para detalles del desarrollo y explicación de clases, ver DESARROLLO.md
-
-
-**Guardas el archivo y haces commit:**
-
-```bash
-git add README.md
-git commit -m "docs: agregar README con instrucciones del proyecto"
-git push
